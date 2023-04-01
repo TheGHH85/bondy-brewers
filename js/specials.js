@@ -2,7 +2,7 @@ $(document).ready(function(){
 	// create and array of images
 	var image, imageCounter = 0, imageCache = [];
 	
-	$("#slides img").each(function(){
+	$("#slide img").each(function(){
 		image = new Image();
 		image.src = $(this).attr("src");
 		image.title = $(this).attr("alt");
