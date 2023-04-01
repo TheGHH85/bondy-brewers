@@ -295,7 +295,40 @@ footer a {
     img {
         height: 250px;
     }
-    #slides img {
-        display: none;
-    }
+    #slides {
+        margin: 0 auto;
+        width: 80%;
+      }
+    
+    
+    #slides {
+        margin: 0 auto;
+        width: 80%;
+        position: relative; /* set the position to relative so child elements can be positioned absolutely */
+      }
+      
+      #slides img {
+        display: none; /* hide all the images by default */
+        position: absolute; /* position the images absolutely within the slide show container */
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto; /* center the images horizontally and vertically */
+        max-width: 100%;
+        max-height: 100%;
+      }
+      
+      #caption {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        text-align: center;
+        padding: 1em;
+        background-color: rgba(0, 0, 0, 0.5); /* add a semi-transparent background to the caption */
+        color: #fff;
+        font-weight: bold;
+        font-size: 1.2em;
+      }
 }
