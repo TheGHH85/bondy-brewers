@@ -271,7 +271,7 @@ footer a {
     
     
     #desktop {
-        display: inline;
+        display: inline-block;
     }
     #tablet {
         display: none;
