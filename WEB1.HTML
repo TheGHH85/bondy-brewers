@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+		<link rel="stylesheet" href="WEB1.css">
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
+        <script src="http://185.113.4.41:7001/jTable/jquery.jtable.js"></script>
+        <script src="http://185.113.4.41:7001/jTable/helpers.js"></script>
+
+<!-- Do not change the code above -->
+
+<link href="http://185.113.4.41:7001/jTable/themes/lightcolor/blue/jtable.css" rel="stylesheet">
+        <!-- Additional themes below
+        <link href="http://185.113.4.41:7001/jTable/themes/lightcolor/gray/jtable.css" rel="stylesheet">
+        <link href="http://185.113.4.41:7001/jTable/themes/lightcolor/green/jtable.css" rel="stylesheet">
+        <link href="http://185.113.4.41:7001/jTable/themes/lightcolor/orange/jtable.css" rel="stylesheet">
+        <link href="http://185.113.4.41:7001/jTable/themes/lightcolor/blue/jtable.css" rel="stylesheet">
+        <link href="http://185.113.4.41:7001/jTable/themes/metro/lightgray/jtable.css" rel="stylesheet">
+        <link href="http://185.113.4.41:7001/jTable/themes/metro/red/jtable.css" rel="stylesheet">
+        -->
+
+        <link  href="http://185.113.4.41:7001/css/mvc.css" rel="stylesheet">   <!-- Modify css file to add additional styles or add your own stylesheet-->     
+
+        <title>Coffee Brewers</title>                 <!-- Modify title for your application -->
+
+        <script>
+            $(document).ready(function() {
+            	$('#container1').jtable({
+            		title : 'Coffee Brewers By Product', 
+            		paging : true,                    
+            		pageSize : 10,                
+            		sorting : true,                  
+            		defaultSorting : 'model',   
+            		actions : {
+            			listAction : 'GENJSON2.aspx?jtView=WEB1'  
+            		},
+            		fields : {                      
+            			model : {           
+            				title : 'Model Name'
+            			},
+            			serial_num : {
+            				title : 'Serial Number'
+            			},
+            			avg_wattage : {
+            				title : 'Average Wattage'
+            			},
+            			colour : {
+            				title : 'Brewer Colour'
+            			},
+            			smart_device_comp : {
+            				title : 'Smart Device Compatability'
+            			},
+            			warranty : {
+            				title : 'Warranty Type'
+            			},
+            			energy_compliant : {
+            				title : 'Energy Compliant'
+            			},
+                        compacity_cups : {
+                            title : 'Cup Compacity'
+                        }
+            		}
+            	});
+            	$('#container1').jtable('load');
+            });
+        </script>
+    </head>
+
+    <body>                                               <!-- Add code below to modify the web page-->
+       <!-- Modify the width of the grid -->
+    <div id="desktop">
+        
+        <header>
+            <h1><hr id="hr1">Bondy Brewers<hr id=hr2></h1>
+        </header>
+            
+           
+           <nav>
+                <ul>
+				<li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="team.html">Our Team</a></li>
+                <li><a href="specials.html">Special</a></li>
+                <li><a href="training.html">Training</a></li>
+                <li><a href="media.html">Media</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                </ul> 
+            </nav>
+
+           
+        <main>
+            
+			<div id="container1" style="width: 95%;"></div>
+        </main>
+   
+
+    
+        <footer>
+           
+            
+            &copy; Copyright 2099. All Rights Reserved. </td>
+            <a href="mailto:info@bbrewers.com">Request Information</a></td>
+            
+            <div class="creator" 
+            data-hover="Coded by: Grey_Hat_Hacker">
+                Coded by: Zac Bondy - c0870952
+            </div>
+
+     
+        </footer>
+        </div>
+
+    <div id="mobile">
+        
+        <header>
+            <h1><hr id="hr1">Bondy Brewers<hr id="hr2"></h1>
+            
+        </header>
+            
+          
+               
+           
+           <nav>
+            <ul>
+				<li><a href="index.html">Home</a></li>	
+                <li><a href="about.html">About</a></li>
+                <li><a href="team.html">Our Team</a></li>
+                <li><a href="specials.html">Special</a></li>
+                <li><a href="training.html">Training</a></li>
+                <li><a href="media.html">Media</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                </ul>  
+            </nav>
+        
+        <main>
+            
+			<div id="container1" style="width: 95%;"></div>
+        </main>
+   
+
+    
+        <footer>
+           
+            
+            &copy; Copyright 2099. All Rights Reserved. </td>
+            <a href="mailto:info@bbrewers.com">Request Information</a></td>
+            
+            <div class="creator" 
+            data-hover="Coded by: Grey_Hat_Hacker">
+                Coded by: Zac Bondy - c0870952
+            </div>
+
+     
+        </footer>
+    </div>
+
+    <div id="tablet">
+        
+        <header>
+            <h1><hr id="hr1">Bondy Brewers<hr id=hr2></h1>
+            
+        </header>
+            
+          
+               
+           
+           <nav>
+            <ul>
+				<li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="team.html">Our Team</a></li>
+                <li><a href="specials.html">Special</a></li>
+                <li><a href="training.html">Training</a></li>
+                <li><a href="media.html">Media</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </nav>
+            
+			<main>
+				<div id="container1" style="width: 95%;"></div>
+			</main>
+   
+
+    
+        <footer>
+           
+            
+            &copy; Copyright 2099. All Rights Reserved. </td>
+            <a href="mailto:info@bbrewers.com">Request Information</a></td>
+            
+            <div class="creator" 
+            data-hover="Coded by: Grey_Hat_Hacker">
+                Coded by: Zac Bondy - c0870952
+            </div>
+
+     
+        </footer>
+    </div>
+	</body>
+</html>
